@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        .animation:hover {
+            background-color: aqua;
+            height: 500px;
+            width: 200px;
+        }
+
+        .animation::after {
+            background-color: rgb(red, green, blue);
+            height: 500px;
+            width: 500;
+        }
+
+        .animation::before {
+            background-color: crimson;
+            height: 500px;
+            width: 500px;
+        }
+
+        .animation {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: red;
+            position: relative;
+            animation-name: example;
+            animation-duration: 10s;
+            animation-iteration-count: 2;
+            animation: eaxmple 5s linear 2s;
+        }
+
+        @keyframes example {
+            0% {
+                background-color: red;
+                left: 0px;
+                border: 1px solid black importent
+            }
+
+            25% {
+                background-color: blue;
+                left: 500px;
+                top: 200;
+            }
+
+            50% {
+                background-color: yellowgreen;
+                left: 500px;
+                top: 200px;
+            }
+
+            75% {
+                background-color: black;
+                left: 0px;
+                top: 200px;
+            }
+
+            100% {
+                background-color: crimson;
+                left: 0px;
+                top: 0px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>css animation</h1>
+    <div class="border">
+        <div class="animation"></div>
+
+    </div>
+</body>
+
+</html>

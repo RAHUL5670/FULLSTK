@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            /* height: 500px; */
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            border: 1px solid tomato;
+            
+
+
+        }
+         
+         .A5{
+            font-size: 30PX;
+         }
+
+        .card1{
+            background-image:linear-gradient(to right,burlywood,pink,orange);
+            align-items: center;
+        }
+
+        .card2 {
+            grid-column-start: 2;
+            grid-column-end: 5;
+            background-image: linear-gradient( to right,pink,orange,rgb(231, 231, 238));
+
+        }
+
+
+        .card1{
+            display: grid;
+            text-align: center;
+            align-items: center;
+
+        }
+       
+        .c1{
+            height: 200px;
+            box-shadow: 2px 2px 2px 2px;
+            border: color gold;
+        }
+        .card1,
+        .card2 {
+            border: 1px solid saddlebrown;
+        }
+
+        .info1{
+            display: grid;
+            /* text-align: center; */
+            /* align-items: center; */
+            font-size: 30px;
+
+
+        }
+
+        .info2{
+              display: grid;
+              grid-template-columns: 1fr 1fr 1fr;
+              font-size: 25px;
+        }
+
+        .info3{
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            font-size:25px;
+        }
+
+        .info3 h5{
+            border: 1px solid slategray;
+            gap: 15px;
+            padding: 5px;
+            font-size: 25px;
+        }
+
+        .info5{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+         }
+
+         .info5 button{
+            background-color: blue;
+            color: white;
+         }
+
+         
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card1">
+            <div >
+                <img class="c1"   src="https://www.cricbuzz.com/a/img/v1/152x152/i1/c171004/sachin-tendulkar.jpg" alt="">
+            </div>
+
+            <div class="A5">
+                <b> Name:sachin kumar </b><BR>
+                
+            </div>
+        </div>
+
+
+
+        <div class="card2">
+            <div class="info">
+                <div class="info1">
+                    <h2> Company Name</h2>
+                    <h2> Web Developer </h2>
+                </div>
+
+                <div class="info2">
+                    <h4  class="z1">Location
+                        <img src="location-dot-solid." alt="">
+                    </h4>
+                    <h4>Pincode</h4>
+                    <h4>Mob.</h4>
+                    <h4>Salary</h4>
+                    <h4>Duration</h4>
+                </div>
+            </div>
+
+
+            <div class="info3">
+                <h4>skills :</h4>
+                <h5>html</h5>
+                <h5>css</h5>
+                <h5>java</h5>
+                <h5>javascript</h5>
+                <h5>bootstrap</h5>
+                <h5>c++</h5>
+                <h5>php</h5>
+                <h5>react</h5>
+                <h5>angular</h5>
+                <h5>python</h5>
+             </div>
+
+             <div class="info5">
+                <button>More</button>
+                <button>View contact</button>
+             </div>
+        </div>
+
+
+
+
+    </div>
+</body>
+
+</html>

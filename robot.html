@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=nn, initial-scale=1.0">
+    <title>grid profil </title>
+    <style>
+        .container {
+            display: grid;
+            height: 500px;
+            /* border: 2px solid black; */
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            border: 2px solid black;
+        }
+
+        .card2 {
+
+            grid-column-start: 2;
+            grid-column-end: 5;
+        }
+
+        /* .card1, */
+        .card2 {
+            /* border: 1px solid black; */
+        } 
+
+        .j1{
+            height: 300px;
+            width: 300px;
+            padding: 5px;
+            box-shadow: gray;
+        }
+
+        .card1{
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            /* border: 1px solid gray; */
+        } 
+        
+        .j2{
+            display: grid;
+            align-items: center;
+            /* justify-content: center; */
+        }
+        
+        .j3{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    
+        .j4{
+            display: flex;
+            gap:40px;
+            font-size: 30px; 
+            flex-wrap: wrap; 
+            
+             
+        }  
+
+        .j4 h3{
+            padding: 1px;
+            color: black;
+            background-color: lightgreen;
+            box-sizing: border-box;
+        
+            
+        }
+       
+        .b1{
+            justify-content: space-between;
+            padding: 5px;
+            display: flex;
+            
+        }
+         
+        button{
+            background-color: blue;
+            color: white;
+            size: 35px;
+            
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card1">
+            <div class="profile">
+                <img class="j1" src="https://image.shutterstock.com/image-photo/head-shot-portrait-close-smiling-260nw-1714666150.jpg" alt="">
+                <div>
+                    <h2>Name : sachin Frugusan</h2>
+                    <h3>Rating</h3>
+                </div>
+            </div>
+        </div>
+            <div class="card2">
+                <div class="j2">
+                   <h1> Company Name </h1> 
+                   <h1> Web Developer</h1>
+                </div>
+
+                <div class="j3">
+                    <h2>location </h2>
+                    <h2>Pincode </h2>
+                    <h2>Mob</li></h2>
+                    <h2>Email</h2>
+                    <h2>Salary </h2>
+                    <h2>duration</h2>                   
+
+                </div>
+
+                <div class="j4">
+                    <h2 class="x1"> skills :</h2>
+                    <h3>html</h3>
+                    <h3>Css</h3>
+                    <h3>java</h3>
+                    <h3>c++<h3>
+                    <h3>javascript</h3>
+                    <h3>angular</h3> 
+                    <h3>php</h3> 
+                    <h3>python</h3> 
+                </div>
+
+                <div class="b1">
+                 <button>More</button>
+                 <button>viwe contact</button>
+                </div>
+            <div>
+
+
+   </div>
+</body>
+
+</html>
